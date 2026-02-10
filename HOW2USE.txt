@@ -1,0 +1,32 @@
+from askelhcore.core import SkeletonEnv
+from askelhcore.skeletons import Pipeline
+
+env = SkeletonEnv()
+pipe = Pipeline(env)
+# Añadir tareas y ejecutar...
+
+---
+
+### 2. .gitignore
+Define los archivos que no deben rastrearse en el control de versiones.
+
+```text
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# OpenCL / Compilación
+*.cl.bin
+*.gch
+
+# IDEs
+.vscode/
+.idea/
+
+# Datos/Resultados
+outputs/
+*.jpg
+*.png
